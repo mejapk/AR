@@ -29,13 +29,16 @@ video.paused ? video.play() : video.pause();
 	   arjs="detectionMode : mono_and_matrix;
 	   matrixCodeType: 3x3;"
 	   vr-mode-ui="enabled: false">
+	   < a-assets >
+                <video id= "beach" playsinline webkit-playsinline 
+	         autoplay loop= "true" src= "videoplayback" >
+	</video>
+</ a-assets >
 	   <a-marker type="barcode" value="3">
 		   <a-image src=jew.jpg"></a-imge>
 	   </a-marker>				
 	   <a-marker type="barcode" value="5">
-	       <a-box position="0 0.5 0 "
-                      metarial="color: blue;">
-	       </a-box>
+	     
         </a-marker>		   
 	<a-camera>
 	</a-camera>
